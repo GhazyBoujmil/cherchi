@@ -24,7 +24,12 @@
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION"
-      ]
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDEN5gltvMfSv91jYy6wL6QTt00H7GQ4sE"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
@@ -48,7 +53,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "e1a463ae-f6bd-4223-8c76-ce7062d9fac7"
+        "projectId": "a50cff2d-215a-40b1-b776-bb2e81d8bfc0"
       }
     }
   }

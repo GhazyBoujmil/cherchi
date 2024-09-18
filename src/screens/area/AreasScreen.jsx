@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Text } from "react-native";
-import MapView, { AnimatedRegion, MarkerAnimated } from "react-native-maps";
+import MapView, {
+  AnimatedRegion,
+  MarkerAnimated,
+  PROVIDER_GOOGLE,
+} from "react-native-maps";
 import * as Location from "expo-location";
 import { StyleSheet, View } from "react-native";
 
@@ -48,10 +52,11 @@ const AreasScreen = ({}) => {
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421,
         }}
+        showsUserLocation={true}
+        followsUserLocation={true}
+        provider={PROVIDER_GOOGLE}
         style={styles.map}
-      >
-        <MarkerAnimated coordinate={coordinate} />
-      </MapView>
+      ></MapView>
     </View>
   );
 };
