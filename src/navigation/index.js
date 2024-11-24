@@ -1,7 +1,7 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import AreasScreen from "../screens/area/AreasScreen";
+import MapDisplayScreen from "../screens/area/MapDisplayScreen";
 import { Entypo } from "@expo/vector-icons";
 
 const Stack = createNativeStackNavigator();
@@ -19,7 +19,7 @@ function BottomTabs() {
         tabBarInactiveTintColor: "grey",
       })}
     >
-      <BottomTab.Screen name="Sites" component={AreasScreen} />
+      <BottomTab.Screen name="Sites" component={MapDisplayScreen} />
     </BottomTab.Navigator>
   );
 }
